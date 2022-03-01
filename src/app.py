@@ -4,6 +4,7 @@ import os
 import cloudinary
 from dotenv import load_dotenv
 from PapunikaMap import PapunikaMap
+from keep_alive import keep_alive
 
 # Load bot environment variables
 load_dotenv()
@@ -39,4 +40,5 @@ async def on_message(message):
         await message.channel.send(cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0])
 
 
+keep_alive()
 client.run(os.getenv('TOKEN'))
