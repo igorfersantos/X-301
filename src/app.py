@@ -28,7 +28,7 @@ async def on_message(message):
 
     if message.content.startswith('!map'):
         map = msg.split("!map ", 1)[1]
-        await message.channel.send(cloudinary.CloudinaryImage(f"{map}.png").url)
+        await message.channel.send(cloudinary.CloudinaryImage(f"{map}.png").image(type="authenticated"))
 
 
 client.run(os.getenv('TOKEN'))
