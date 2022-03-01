@@ -1,5 +1,6 @@
 import discord
 import os
+import cloudinary
 from dotenv import load_dotenv
 
 # Load bot environment variables
@@ -22,7 +23,7 @@ async def on_message(message):
 
     if message.content.startswith('!map'):
         map = msg.split("!map ", 1)[1]
-        await message.channel.send(map)
+        await message.channel.send(cloudinary.CloudinaryImage(f"{map}.png").url)
 
 
 client.run(os.getenv('TOKEN'))
