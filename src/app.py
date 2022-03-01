@@ -1,7 +1,9 @@
+import json
 import discord
 import os
 import cloudinary
 from dotenv import load_dotenv
+from PapunikaMap import PapunikaMap
 
 # Load bot environment variables
 load_dotenv()
@@ -13,6 +15,10 @@ cloudinary.config(
 )
 
 client = discord.Client()
+papunika_map_info_file = open('res/papunikaMapInfo.json')
+papunika_map_info_data = json.loads(papunika_map_info_file.read())
+papunika_map = PapunikaMap(**papunika_map_info_data)
+
 
 @client.event
 async def on_ready():
@@ -28,7 +34,9 @@ async def on_message(message):
 
     if message.content.startswith('!map'):
         map = msg.split("!map ", 1)[1]
-        await message.channel.send(cloudinary.CloudinaryImage(f"{map}.png").image(type="authenticated"))
+        map_zone = [map_zone for map_zone in papunika_map.zones if map_zone['name'].lower() == map.lower()][0]
+
+        await message.channel.send(cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0])
 
 
 client.run(os.getenv('TOKEN'))
