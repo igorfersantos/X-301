@@ -1,7 +1,8 @@
 import json
-import discord
 import os
+
 import cloudinary
+import discord
 from dotenv import load_dotenv
 from printy import printy
 
@@ -44,9 +45,9 @@ alias_names_punika = {
 load_dotenv()
 
 cloudinary.config(
-  cloud_name = os.getenv('CLOUDINARY_CLOUD_NAME'),
-  api_key = os.getenv('CLOUDINARY_API_KEY'),
-  api_secret = os.getenv('CLOUDINARY_API_SECRET')
+    cloud_name=os.getenv('CLOUDINARY_CLOUD_NAME'),
+    api_key=os.getenv('CLOUDINARY_API_KEY'),
+    api_secret=os.getenv('CLOUDINARY_API_SECRET')
 )
 
 client = discord.Client()
@@ -77,17 +78,28 @@ async def on_message(message):
             alias_names_arthetine
         ]
 
+        image_url = None
+        map_id = None
         for map_zone in papunika_map.zones:
             if map_zone['name'].lower() == map.lower():
-                await message.channel.send(cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0])
-                return
+                image_url = cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0]
+                map_id = map_zone['id']
 
-        for alias in aliases:
-            for game_name, papunika_name in alias.items():
-                if game_name == map.lower():
-                    map_zone = [zone for zone in papunika_map.zones if zone['name'].lower() == papunika_name][0]
-                    if map_zone:
-                        await message.channel.send(cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0])
-
+        if not image_url:
+            for alias in aliases:
+                for game_name, papunika_name in alias.items():
+                    if game_name == map.lower():
+                        map_zone = [zone for zone in papunika_map.zones if zone['name'].lower() == papunika_name][0]
+                        if map_zone:
+                            image_url = cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0]
+                            map_id = map_zone['id']
+        if image_url:
+            embed = discord.Embed()
+            embed.set_author(name="Map from Papunika found!")
+            embed.add_field(name=f"https://papunika.com/map/?z={map_id}&l=us", value="Link to papunika map")
+            embed.set_image(url=image_url)
+            await message.channel.send(embed=embed)
+        else:
+            await message.channel.send("Map not found!")
 
 client.run(os.getenv('TOKEN'))
