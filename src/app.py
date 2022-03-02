@@ -90,7 +90,4 @@ async def on_message(message):
                         await message.channel.send(cloudinary.utils.cloudinary_url(f"maps/{map_zone['id']}.png")[0])
 
 
-
-
-
 client.run(os.getenv('TOKEN'))
