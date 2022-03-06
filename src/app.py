@@ -69,7 +69,8 @@ async def on_message(message):
     msg = message.content
 
     if message.content.startswith('!map'):
-        map = msg.split("!map ", 1)[1]
+        map: str = msg.split("!map ", 1)[1]
+        map = map.strip()
         # TODO: get map by map layer, i.e: Kalaja 2F
         # TODO: get map by partial name, i.e: brae (Breezesome Brae)
         aliases = [
