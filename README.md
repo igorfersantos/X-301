@@ -19,15 +19,21 @@ Future plans include creating commands and/or improvements to show guides, conti
 <details>
   <summary>Command details</summary>
   
-  This command should show you a image of the map with a link to the correct page on Papunika.  
-  i.e:
+  This command should show you a image of the map with a link to the correct page on Papunika.
+  i.e:  
   ![Image](https://media.discordapp.net/attachments/808502509076873266/950490307198320722/unknown.png)
+  
+  >Notice that some islands should have a different name in official translation  
+  and maybe can't be found on Papunika. Although I made some aliases  
+  >to get around it, I can't promised that you will find every island in the game without  
+  >checking [Papunika's official interactive map](https://papunika.com).
+  
 
 </details>
 
+
 ## Built with
 
-<b>Built with</b>
 - [py-cord](https://github.com/Pycord-Development/pycord)
 
 ## Contributing
@@ -35,5 +41,21 @@ Pull requests and suggestions are welcome. For major changes and suggestions, pl
 
 Tests still need to be created.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Contact
+
+[Discord server](https://discord.gg/pye9rJyN8X)
+
+Igor - [@igukkkj](https://twitter.com/igukkkj)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Credits
+
+Ryu - creator of [Papunika](https://papunika.com) - Thank you so much for letting me make this happen with your consent :) 
+ 
+<p align="right">(<a href="#top">back to top</a>)</p>
