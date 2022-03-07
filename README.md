@@ -1,4 +1,7 @@
-# X-301
+## X-301
+![workflow](https://github.com/igorfersantos/x-301/actions/workflows/python-app.yml/badge.svg)
+![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
+![license](https://img.shields.io/github/license/igorfersantos/X-301)
 
 X-301 is a discord bot with the purpose of make your life easier while playing Lost Ark.  
 
@@ -22,7 +25,10 @@ Future plans include creating commands and/or improvements to show guides, conti
 
 </details>
 
+## Built with
 
+<b>Built with</b>
+- [py-cord](https://github.com/Pycord-Development/pycord)
 
 ## Contributing
 Pull requests and suggestions are welcome. For major changes and suggestions, please open an issue first to discuss what you would like to change.
