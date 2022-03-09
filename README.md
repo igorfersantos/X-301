@@ -16,8 +16,6 @@ Future plans include creating commands and/or improvements to show guides, conti
 
 ## Usage
 
----
-
 ### !map [Map/Island name]
 <details>
   <summary>Command details</summary>
@@ -33,14 +31,10 @@ Future plans include creating commands and/or improvements to show guides, conti
 > 
 </details>
 
----
-
 
 ## Built with
 
 - [py-cord](https://github.com/Pycord-Development/pycord)
-
----
 
 ## Contributing
 Pull requests and suggestions are welcome. For major changes and suggestions, please open an issue first to discuss what you would like to change.
@@ -49,24 +43,16 @@ Tests still need to be created.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
----
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
----
-
 ## Contact
-
----
 
 [Discord server](https://discord.gg/pye9rJyN8X)
 
 Igor - [@igukkkj](https://twitter.com/igukkkj)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
----
 
 ## Credits
 
