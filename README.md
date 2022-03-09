@@ -13,7 +13,10 @@ Future plans include creating commands and/or improvements to show guides, conti
 
 [Add X-301 to your discord server](https://discord.com/oauth2/authorize?client_id=947371440670375958&permissions=534723946560&scope=bot)
 
+
 ## Usage
+
+---
 
 ### !map [Map/Island name]
 <details>
@@ -27,14 +30,17 @@ Future plans include creating commands and/or improvements to show guides, conti
   and maybe can't be found on Papunika. Although I made some aliases  
   >to get around it, I can't promised that you will find every island in the game without  
   >checking [Papunika's official interactive map](https://papunika.com).
-  
-
+> 
 </details>
+
+---
 
 
 ## Built with
 
 - [py-cord](https://github.com/Pycord-Development/pycord)
+
+---
 
 ## Contributing
 Pull requests and suggestions are welcome. For major changes and suggestions, please open an issue first to discuss what you would like to change.
@@ -43,10 +49,16 @@ Tests still need to be created.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+---
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
+---
+
 ## Contact
+
+---
 
 [Discord server](https://discord.gg/pye9rJyN8X)
 
@@ -54,8 +66,10 @@ Igor - [@igukkkj](https://twitter.com/igukkkj)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+---
+
 ## Credits
 
-Ryu - creator of [Papunika](https://papunika.com) - Thank you so much for letting me make this happen with your consent :) 
+Ryu - Creator of [Papunika](https://papunika.com) - Thank you so much for making it possible and giving the go-ahead!
  
 <p align="right">(<a href="#top">back to top</a>)</p>
