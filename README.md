@@ -20,7 +20,7 @@ Future plans include creating commands and/or improvements to show guides, conti
 <details>
   <summary>Command details</summary>
   
-  This command should show you a image of the map with a link to the correct page on Papunika.
+  This command should show you an image of the map with a link to the correct page on Papunika.
   i.e:  
   ![Image](https://media.discordapp.net/attachments/808502509076873266/950490307198320722/unknown.png)
   
