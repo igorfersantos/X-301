@@ -25,8 +25,8 @@ Future plans include creating commands and/or improvements to show guides, conti
   ![Image](https://media.discordapp.net/attachments/808502509076873266/950490307198320722/unknown.png)
   
   >Notice that some islands should have a different name in official translation  
-  and maybe can't be found on Papunika. Although I made some aliases  
-  >to get around it, I can't promised that you will find every island in the game without  
+  and may not be found on Papunika. Although I made some fixes  
+  >to get around it, I can't promise that you will find every island in the game without first  
   >checking [Papunika's official interactive map](https://papunika.com).
 > 
 </details>
