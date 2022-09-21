@@ -5,7 +5,7 @@
 
 X-301 is a discord bot with the purpose of make your life easier while playing Lost Ark.  
 
-With X-301 you can get information about LA gathered from [Papunika](https://papunika.com).
+With X-301 you can get information about Lost Ark maps gathered from [Papunika](https://papunika.com).
 
 Right now there's only one command which shows map information from [Papunika's website](https://papunika.com).
 
